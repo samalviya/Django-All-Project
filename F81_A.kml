@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80701108276844,22.49613675131842,0
+77.80695693567395,22.49618646833548,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80691351741552,22.49626468354421,0
+77.80689608305693,22.49633623880533,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80687060207129,22.49641027213181,0
+77.80683875083923,22.49647656135285,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80681628733873,22.49653742969841,0
+77.80679918825626,22.49657351702549,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80677001923323,22.49664724046272,0
+77.80672593042254,22.49663438532838,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80668050050735,22.49663268163578,0
+77.80663087964058,22.49664135497967,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80659466981888,22.49665498451897,0
+77.80656365677714,22.49671383933233,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80654605478048,22.4967479131602,0
+77.80651822686195,22.49679793971956,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.8065038099885,22.49683309769315,0
+77.8065001219511,22.49687507041646,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80650448054075,22.49691456503377,0
+77.80652878805995,22.49693826179875,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80655577778816,22.49696691474444,0
+77.80658008530736,22.4969819381785,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80660707503557,22.49700191779438,0
+77.80664797872305,22.49704512951195,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80668888241053,22.49708834121601,0
+77.80671712942421,22.49712543512326,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80673732981086,22.49714766048672,0
+77.80678041279316,22.49719706737946,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80680363066494,22.49722850812022,0
+77.80682684853673,22.49725747076668,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80686523765326,22.49729804943763,0
+77.80690044164658,22.49733738905386,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80692625790834,22.49737053344625,0
+77.80696984380484,22.49741204136566,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80702583491802,22.49745974448157,0
+77.80705785378814,22.49747430322145,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80708450824022,22.49748886195984,0
+77.80712189152837,22.49751410742802,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80715927481651,22.49753687480951,0
+77.80722063034773,22.49758488764254,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80727293342352,22.4976239174171,0
+77.80731987208128,22.49765055678075,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.8073637932539,22.49768439805792,0
+77.80739564448595,22.49769717565473,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80745934695005,22.49770538429203,0
+77.80750343576074,22.49771026301021,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80753411352634,22.49770894653072,0
+77.80759010463953,22.4977137478088,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80762220732868,22.49772458940385,0
+77.80765431001782,22.49773543099806,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80771315097809,22.49775463610569,0
+77.80775154009461,22.49777546744932,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80778992921114,22.49779629878973,0
+77.80782831832767,22.49781713012705,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80786670744419,22.49783796146122,0
+77.80792018398643,22.49787853996191,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80797097831964,22.49791416230003,0
+77.80802126973867,22.49793313506333,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80806485563517,22.49793476130006,0
+77.80811715871096,22.49793801377347,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80816334299743,22.49795009438834,0
+77.80820416286588,22.49796837018826,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80826568603516,22.4979925314116,0
+77.80832486227155,22.49801344015917,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80836123973131,22.49802939275704,0
+77.80841119587421,22.49804642951001,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80841622501612,22.49798912405985,0
+77.80839677900076,22.49796279452076,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80837465077639,22.49793770401411,0
+77.80835654586554,22.4979169501348,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.8083411231637,22.49789867432806,0
+77.80832150951028,22.49785871535237,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80829921364784,22.49781132213369,0
+77.80828312039375,22.49778429560141,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80826702713966,22.49775726906382,0
+77.80824959278107,22.49773891579603,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80823484063148,22.49771808444693,0
+77.80821908265352,22.49768432061794,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80820332467556,22.49765551294084,0
+77.80815437436104,22.49760657085198,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80812369659543,22.49755964218723,0
+77.80806753784418,22.497510235424,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80802093446255,22.49746268720572,0
+77.80798103660345,22.49743868077007,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80794868245721,22.49740383271093,0
+77.80790023505688,22.49736650655789,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80783049762249,22.49734482331077,0
+77.80779160559177,22.497302076328,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80773544684052,22.49727017096268,0
+77.80772354453802,22.49721224566899,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80736614018679,22.497084624080713,0
+77.80737351626158,22.49700284707877,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80752170830965,22.49701090087656,0
+77.80773729085922,22.497172906017195,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80776679515839,22.49693160192403,0
+77.8077818825841,22.49689938671158,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.8078025020659,22.49685013459344,0
+77.8078244626522,22.49679220912389,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80784105882049,22.4967555023298,0
+77.80786033719778,22.49671879552601,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80788414180279,22.49669215598295,0
+77.80791062861681,22.49664693070046,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80793275684118,22.49661347637243,0
+77.80794801190495,22.49659024419536,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80796997249126,22.49656081676552,0
+77.80794650316238,22.49654904579185,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80791901051998,22.49653479671709,0
+77.80789151787758,22.49651543655883,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80785866081715,22.49649607639785,0
+77.8078231215477,22.49648074314844,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80778490006924,22.49645425844089,0
+77.80774299055338,22.49643133599988,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80769973993301,22.49640097924786,0
+77.80766822397709,22.49638657527641,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80763670802116,22.49636473699428,0
+77.80761843547225,22.49635590875161,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80759052373469,22.49633352837946,0
+77.80756261199713,22.49631858231578,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80754065141082,22.49630743084752,0
+77.80750796198845,22.49628636696058,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80747024342418,22.49626932999086,0
+77.8074325248599,22.49624485870341,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80739296227694,22.49621527631849,0
+77.80735071748495,22.49618197676769,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80731802806258,22.49615781522814,0
+77.80728533864021,22.49612498030866,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80725281685591,22.49610143828613,0
+77.80721493065357,22.49608037436782,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80723655596375,22.496135047619706,0
+77.80727427452803,22.496194677062434,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80722079798579,22.49622580826778,0
+77.80712440609932,22.49613303415756,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.80709154903889,22.49617578150155,0
+77.80705265700817,22.49615254925102,0
+</coordinates>
+</LinearRing>
+</Placemark>
+</Document>
+</kml>

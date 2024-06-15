@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KML Processing</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url("{% static 'your_app_name/61755.jpg' %}") no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff; /* Setting text color to white */
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .page-title {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .btn-group {
+            text-align: center;
+        }
+        .copy-btn, .download-btn {
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function copyToClipboard() {
+            var copyText = document.getElementById("resultText");
+            copyText.select();
+            document.execCommand("copy");
+            var tooltip = document.getElementById("copyTooltip");
+            tooltip.innerHTML = "Copied!";
+        }
+
+        function outFunc() {
+            var tooltip = document.getElementById("copyTooltip");
+            tooltip.innerHTML = "Copy to clipboard";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">Coordinates To Bund Processing</h1>
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="coordinatesStr">Enter Coordinates</label>
+                <textarea class="form-control" id="coordinatesStr" name="coordinates_str" rows="5" placeholder="Enter coordinates here...">{% if coordinates_str %}{{ coordinates_str }}{% endif %}</textarea>
+            </div>
+            <div class="btn-group">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+        {% if result %}
+            <div class="alert alert-success mt-3">
+                <strong>Formatted Coordinates:</strong>
+                <textarea id="resultText" class="form-control mt-2" rows="5" readonly>{{ result }}</textarea>
+                <div class="btn-group">
+                    <button class="btn btn-secondary copy-btn" onclick="copyToClipboard()" onmouseout="outFunc()">Copy to clipboard</button>
+                    <form method="get" action="{% url 'download_kml' %}">
+                        <button type="submit" class="btn btn-info download-btn">Download KML</button>
+                    </form>
+                </div>
+            </div>
+        {% endif %}
+        <a href="{% url 'home' %}" class="btn btn-secondary mt-3">Back to Home</a>
+    </div>
+
+    <div class="container mt-5">
+        <h2>Upload CSV File</h2>
+        <form method="post" enctype="multipart/form-data" action="{% url 'process_csv' %}">
+            {% csrf_token %}
+            <div class="form-group">
+                <input type="file" name="csv_file" accept=".csv">
+            </div>
+            <div class="btn-group">
+                <button type="submit" class="btn btn-primary">Upload</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Display any messages or errors here -->
+    {% if messages %}
+        <div class="container mt-3">
+            {% for message in messages %}
+                <div class="alert alert-info">{{ message }}</div>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    <!-- Optional: Display the processed CSV file download link -->
+    {% block processed_csv %}
+    {% endblock %}
+</body>
+</html>
