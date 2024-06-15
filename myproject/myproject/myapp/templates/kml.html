@@ -51,8 +51,8 @@
         <form method="post">
             {% csrf_token %}
             <div class="form-group">
-                <label for="coordinatesStr">Enter Coordinates</label>
-                <textarea class="form-control" id="coordinatesStr" name="coordinates_str" rows="5" placeholder="Enter coordinates here...">{% if coordinates_str %}{{ coordinates_str }}{% endif %}</textarea>
+                <label for="coordinatesStr">Enter Coordinate String</label>
+                <textarea class="form-control" id="coordinatesStr" name="coordinates_str" rows="5" placeholder="Example:- lat long 0 0; (22.753441046846458 75.86587395519018 0.0 0.0; or 22.57783047102137 77.64268898033622;)  ">{% if coordinates_str %}{{ coordinates_str }}{% endif %}</textarea>
             </div>
             <div class="btn-group">
                 <button type="submit" class="btn btn-primary">Submit</button>
