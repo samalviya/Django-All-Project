@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.81445521861315,22.48108793680414,0
+77.8146667778492,22.48109382294862,0
+77.81469091773033,22.48081717388711,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.8146406263113,22.48053804588632,0
+77.81449880450964,22.48027750525796,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.81439889222383,22.47998877238366,0
+77.81431272625923,22.47967835289226,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.81425908207893,22.47943856729973,0
+77.81421281397343,22.47900732394884,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.81405657529831,22.4789648811039,0
+77.81381785869598,22.47896519090578,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.81354159116745,22.47896828892405,0
+77.81326331198215,22.47897448496047,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.81315971165895,22.4791374406186,0
+77.81306985765696,22.47928676483656,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.81294580549002,22.47937010131144,0
+77.81304940581322,22.47963374165066,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.8130966797471,22.47977717913324,0
+77.81319089233875,22.47991070287648,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.81321838498116,22.48000612115706,0
+77.81311662867665,22.48008248671412,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.81301487237215,22.48016876580195,0
+77.81320229172707,22.48030197936876,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.81339172273874,22.48050644645456,0
+77.81357109546661,22.48074684979344,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+77.81382255256176,22.48106810978927,0
+77.81417928636074,22.48108762700706,0
+</coordinates>
+</LinearRing>
+</Placemark>
+</Document>
+</kml>

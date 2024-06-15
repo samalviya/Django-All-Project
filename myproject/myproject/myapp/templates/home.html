@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url("{% static 'your_app_name/61755.jpg' %}") no-repeat center center fixed;
+            background-size: cover;
+            color: #000000;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+        .welcome-text {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .btn-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }
+        .btn {
+            margin: 10px;
+            color:rgb(0, 0, 0)
+        }
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="{% static 'your_app_name/logo.png' %}" alt="Logo" height="100">
+    </div>
+    <div class="container">
+        <div class="welcome-text">
+            <h1>Welcome to KML Modifier</h1>
+        </div>
+        <div class="btn-container">
+            <button id="smallest-btn" class="btn btn-primary">Find Smallest Number</button>
+            <button id="largest-btn" class="btn btn-primary">Find Largest Number</button>
+            <button id="sum-btn" class="btn btn-primary">Calculate Sum</button>
+            <button id="kml-btn" class="btn btn-primary">Process Coordinates To Bund</button>
+            <button id="test-btn" class="btn btn-primary">test</button>
+        </div>
+    </div>
+
+    <script>
+        // Add event listeners to the buttons
+        document.getElementById("smallest-btn").addEventListener("click", function() {
+            window.location.href = "{% url 'smallest_number' %}";
+        });
+
+        document.getElementById("largest-btn").addEventListener("click", function() {
+            window.location.href = "{% url 'largest_number' %}";
+        });
+
+        document.getElementById("sum-btn").addEventListener("click", function() {
+            window.location.href = "{% url 'sum' %}";
+        });
+
+        document.getElementById("kml-btn").addEventListener("click", function() {
+            window.location.href = "{% url 'kml' %}";
+        });
+
+        document.getElementById("test-btn").addEventListener("click", function() {
+            window.location.href = "{% url 'process_csv' %}";
+        });
+    </script>
+</body>
+</html>
