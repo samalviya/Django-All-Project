@@ -1,3 +1,4 @@
+<!-- myapp/templates/myapp/home.html -->
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -26,16 +27,14 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            
         }
         .btn {
             margin: 10px;
-            color:rgb(0, 0, 0)
+            color: rgb(0, 0, 0);
         }
         .logo-container {
             text-align: center;
             margin-bottom: 20px;
-            
         }
     </style>
 </head>
@@ -53,6 +52,8 @@
             <button id="sum-btn" class="btn btn-primary">Calculate Sum</button>
             <button id="kml-btn" class="btn btn-primary">Process Coordinates To Bund</button>
             <button id="test-btn" class="btn btn-primary">Coordinates To Tiff Extract</button>
+            <!-- Add the Google.com button -->
+            <a href="https://maps.anaxee.com/login" target="_blank" class="btn btn-primary">Anaxee Maps</a>
         </div>
     </div>
 
