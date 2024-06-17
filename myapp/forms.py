@@ -1,6 +1,9 @@
 # forms.py
 from django import forms
 
+class KMLUploadForm(forms.Form):
+    file = forms.FileField()
+
 class GeoTIFFForm(forms.Form):
     bbox = forms.CharField(
         label='Bounding Box',

@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect 
 from .utils import find_smallest_number, find_largest_number, calculate_sum
 import os
 import xml.dom.minidom
@@ -6,11 +6,14 @@ import xml.etree.ElementTree as ET
 from django.http import HttpResponse
 from .kml_script import parse_coordinates1, parse_kml1,merge_segments, create_boundary_kml, create_kml, parse_coordinates, create_kmal, buffer_and_create_polygons, format_kml_coordinates
 import csv
-from .forms import GeoTIFFForm
+from .forms import GeoTIFFForm,KMLUploadForm
 from samgeo import tms_to_geotiff
 from PIL import Image
 import io
 import base64
+from django.conf import settings
+import folium
+
 
 def home(request):
     return render(request, 'home.html')
@@ -206,3 +209,111 @@ def geotiff_view(request):
     else:
         form = GeoTIFFForm()
     return render(request, 'geotiff_form.html', {'form': form})
+
+
+
+def convert_kml_to_html(kml_file, output_folder):
+    latitudes = []
+    longitudes = []
+
+    # Initialize the folium map
+    m = folium.Map(location=[0, 0], zoom_start=13,
+                   tiles='http://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
+                   attr='Google Satellite', name='Satellite',
+                   max_native_zoom=20, max_zoom=20)
+
+    # Parse KML file
+    tree = ET.parse(kml_file)
+    root = tree.getroot()
+
+    features = []
+    for placemark in root.findall('.//{http://www.opengis.net/kml/2.2}Placemark'):
+        geometry_element = placemark.find('.//{http://www.opengis.net/kml/2.2}Polygon') or placemark.find('.//{http://www.opengis.net/kml/2.2}LineString')
+        if geometry_element is not None:
+            coordinates = geometry_element.find('.//{http://www.opengis.net/kml/2.2}coordinates').text.strip()
+            coordinates = [list(map(float, coord.split(','))) for coord in coordinates.split()]
+
+            description_element = placemark.find('.//{http://www.opengis.net/kml/2.2}description')
+            description_text = description_element.text.strip() if description_element is not None else ''
+
+            lats = [coord[1] for coord in coordinates]
+            lons = [coord[0] for coord in coordinates]
+            avg_lat = sum(lats) / len(lats)
+            avg_lon = sum(lons) / len(lons)
+
+            latitudes.append(avg_lat)
+            longitudes.append(avg_lon)
+
+            # Create a GeoJSON feature with a red border
+            feature = {
+                "type": "Feature",
+                "properties": {
+                    "description": description_text,
+                    "color": "red"  # Change the border color to red
+                },
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [coordinates]
+                }
+            }
+            features.append(feature)
+
+    geojson_data = {
+        "type": "FeatureCollection",
+        "features": features
+    }
+
+    folium.GeoJson(
+        geojson_data,
+        style_function=lambda x: {"color": x["properties"]["color"]},  # Set border color
+        tooltip=folium.GeoJsonTooltip(fields=['description'], labels=False) if any(feature["properties"].get("description") for feature in features) else None
+    ).add_to(m)
+
+    if latitudes and longitudes:
+        map_center = [sum(latitudes) / len(latitudes), sum(longitudes) / len(longitudes)]
+        m.location = map_center
+        
+    folium.TileLayer(tiles='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', attr='OpenStreetMap', name='OSM', max_native_zoom=20, max_zoom=20).add_to(m)
+    folium.TileLayer(tiles='http://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', attr='Google Normal', name='Normal', max_native_zoom=20, max_zoom=20).add_to(m)
+    folium.TileLayer(tiles='http://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', attr='Google Hybrid', name='Hybrid', max_native_zoom=20, max_zoom=20).add_to(m)
+
+    folium.LayerControl().add_to(m)
+    # Save the map
+    map_file = os.path.join(output_folder, "plot_map.html")
+    m.save(map_file)
+
+    return map_file
+
+def upload_kml(request):
+    if request.method == 'POST':
+        form = KMLUploadForm(request.POST, request.FILES)
+        if form.is_valid():
+            kml_file = request.FILES['file']
+            output_folder = os.path.join(settings.MEDIA_ROOT, 'kml_maps')
+            if not os.path.exists(output_folder):
+                os.makedirs(output_folder)
+
+            map_file = convert_kml_to_html(kml_file, output_folder)
+
+            # Provide the map file for download
+            download_url = f'/download/{os.path.basename(map_file)}'
+            return redirect(f'/map_display/?map_url={settings.MEDIA_URL}kml_maps/{os.path.basename(map_file)}&download_url={download_url}')
+    else:
+        form = KMLUploadForm()
+
+    return render(request, 'upload.html', {'form': form})
+
+def map_display(request):
+    map_url = request.GET.get('map_url')
+    download_url = request.GET.get('download_url')
+    return render(request, 'map_display.html', {'map_url': map_url, 'download_url': download_url})
+
+def download_map(request, file_name):
+    file_path = os.path.join(settings.MEDIA_ROOT, 'kml_maps', file_name)
+    if os.path.exists(file_path):
+        with open(file_path, 'rb') as f:
+            response = HttpResponse(f.read(), content_type='application/html')
+            response['Content-Disposition'] = 'inline; filename=' + os.path.basename(file_path)
+            return response
+    else:
+        return HttpResponse("File not found")
