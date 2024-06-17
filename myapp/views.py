@@ -308,7 +308,12 @@ def upload_kml(request):
 def map_display(request):
     map_url = request.GET.get('map_url')
     download_url = request.GET.get('download_url')
-    return render(request, 'map_display.html', {'map_url': map_url, 'download_url': download_url})
+    
+    context = {
+        'map_url': map_url,
+        'download_url': download_url,
+    }
+    return render(request, 'map_display.html', context)
 
 def download_map(request, file_name):
     file_path = os.path.join(settings.MEDIA_ROOT, 'kml_maps', file_name)
@@ -319,3 +324,5 @@ def download_map(request, file_name):
             return response
     else:
         return HttpResponse("File not found")
+    
+    

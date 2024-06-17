@@ -1,6 +1,9 @@
 from django.urls import path
 from .views import home,process_csv_view,map_display, download_map,geotiff_view, smallest_number_view, largest_number_view, sum_view, kml_view, download_kml,upload_kml
-
+from django.conf import settings
+from django.conf.urls.static import static
+from django.urls import path
+from .views import map_display
 urlpatterns = [
     path('', home, name='home'),
     path('smallest_number/', smallest_number_view, name='smallest_number'),
@@ -14,3 +17,6 @@ urlpatterns = [
     path('map_display/', map_display, name='map_display'),
     path('download/<str:file_name>/', download_map, name='download_map'),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

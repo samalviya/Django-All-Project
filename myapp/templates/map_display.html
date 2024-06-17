@@ -21,11 +21,12 @@
         }
         h2 {
             text-align: center;
+            color: white; /* Updated heading color */
         }
         .map-container {
             text-align: center;
             margin-top: 20px;
-            position: relative; /* for positioning the loader */
+            position: relative;
         }
         .download-btn, .btn-secondary {
             background-color: #007bff;
@@ -41,14 +42,19 @@
         .download-btn:hover, .btn-secondary:hover {
             background-color: #1100ff;
         }
-
-        
         iframe {
             width: 100%;
             height: 600px;
             border: none;
             display: block;
-            margin: 0 auto; /* center iframe */
+            margin: 0 auto;
+        }
+        #loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
         }
     </style>
 </head>
@@ -56,15 +62,14 @@
     <div class="container">
         <h2>Map Display</h2>
         <div class="map-container">
-
-            <iframe id="mapIframe" src="{{ map_url }}" width="100%" height="600"></iframe><br><br>
+            <div id="loader">Loading...</div> <!-- Added loader element -->
+            <iframe src="{{ map_url }}" width="100%" height="600px" frameborder="0"></iframe><br><br>
             <a href="{{ download_url }}" class="download-btn">Download Map</a>
             <a href="{% url 'home' %}" class="btn-secondary">Back to Home</a>
         </div>
     </div>
 
     <script>
-        // JavaScript for iframe loading and spinner display
         const mapIframe = document.getElementById('mapIframe');
         const loader = document.getElementById('loader');
 
@@ -73,7 +78,6 @@
             mapIframe.style.display = 'block';
         };
 
-        // Display loader during iframe load
         mapIframe.onbeforeload = function() {
             loader.style.display = 'block';
             mapIframe.style.display = 'none';
