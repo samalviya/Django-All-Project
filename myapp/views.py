@@ -6,6 +6,11 @@ import xml.etree.ElementTree as ET
 from django.http import HttpResponse
 from .kml_script import parse_coordinates1, parse_kml1,merge_segments, create_boundary_kml, create_kml, parse_coordinates, create_kmal, buffer_and_create_polygons, format_kml_coordinates
 import csv
+from .forms import GeoTIFFForm
+from samgeo import tms_to_geotiff
+from PIL import Image
+import io
+import base64
 
 def home(request):
     return render(request, 'home.html')
@@ -171,3 +176,33 @@ def process_csv_view(request):
 
     return render(request, 'kml.html')
 
+# views.py
+def geotiff_view(request):
+    if request.method == 'POST':
+        form = GeoTIFFForm(request.POST)
+        if form.is_valid():
+            bbox = list(map(float, form.cleaned_data['bbox'].split(',')))
+            zoom = form.cleaned_data['zoom']
+            output = "satellite.tif"
+            tms_to_geotiff(output, bbox, zoom, source="Satellite", overwrite=True)
+
+            # Convert GeoTIFF to PNG for visualization
+            with Image.open(output) as img:
+                buffer = io.BytesIO()
+                img.save(buffer, format="PNG")
+                img_base64 = base64.b64encode(buffer.getvalue()).decode('utf-8')
+
+            return render(request, 'geotiff_form.html', {
+                'form': form,
+                'image': img_base64,
+                'output': output
+            })
+    elif request.method == 'GET' and 'download' in request.GET:
+        output = "satellite.tif"
+        with open(output, 'rb') as f:
+            response = HttpResponse(f.read(), content_type='image/tiff')
+            response['Content-Disposition'] = 'attachment; filename="satellite.tif"'
+            return response
+    else:
+        form = GeoTIFFForm()
+    return render(request, 'geotiff_form.html', {'form': form})
