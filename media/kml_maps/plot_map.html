@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_ddd49222032698a4fe72d093cd3143a0 {
+                #map_3e3a1bf73df2cb0b3d63845b7bf519b2 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -55,14 +55,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_ddd49222032698a4fe72d093cd3143a0" ></div>
+            <div class="folium-map" id="map_3e3a1bf73df2cb0b3d63845b7bf519b2" ></div>
         
 </body>
 <script>
     
     
-            var map_ddd49222032698a4fe72d093cd3143a0 = L.map(
-                "map_ddd49222032698a4fe72d093cd3143a0",
+            var map_3e3a1bf73df2cb0b3d63845b7bf519b2 = L.map(
+                "map_3e3a1bf73df2cb0b3d63845b7bf519b2",
                 {
                     center: [22.579320627819012, 77.64324672112707],
                     crs: L.CRS.EPSG3857,
@@ -78,41 +78,41 @@
 
         
     
-            var tile_layer_d0e26f0ccac42488c355b783db7f0d4a = L.tileLayer(
+            var tile_layer_a3d3660813093b83c3ad4af423694a90 = L.tileLayer(
                 "http://mt1.google.com/vt/lyrs=s\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google Satellite", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_d0e26f0ccac42488c355b783db7f0d4a.addTo(map_ddd49222032698a4fe72d093cd3143a0);
+            tile_layer_a3d3660813093b83c3ad4af423694a90.addTo(map_3e3a1bf73df2cb0b3d63845b7bf519b2);
         
     
-        function geo_json_4a952f96325ad1631e64b96e90f03cc4_styler(feature) {
+        function geo_json_ad423007b1d256c7843d1b5f3639cc9a_styler(feature) {
             switch(feature.properties.description) {
                 default:
                     return {"color": "red"};
             }
         }
 
-        function geo_json_4a952f96325ad1631e64b96e90f03cc4_onEachFeature(feature, layer) {
+        function geo_json_ad423007b1d256c7843d1b5f3639cc9a_onEachFeature(feature, layer) {
             layer.on({
             });
         };
-        var geo_json_4a952f96325ad1631e64b96e90f03cc4 = L.geoJson(null, {
-                onEachFeature: geo_json_4a952f96325ad1631e64b96e90f03cc4_onEachFeature,
+        var geo_json_ad423007b1d256c7843d1b5f3639cc9a = L.geoJson(null, {
+                onEachFeature: geo_json_ad423007b1d256c7843d1b5f3639cc9a_onEachFeature,
             
-                style: geo_json_4a952f96325ad1631e64b96e90f03cc4_styler,
+                style: geo_json_ad423007b1d256c7843d1b5f3639cc9a_styler,
         });
 
-        function geo_json_4a952f96325ad1631e64b96e90f03cc4_add (data) {
-            geo_json_4a952f96325ad1631e64b96e90f03cc4
+        function geo_json_ad423007b1d256c7843d1b5f3639cc9a_add (data) {
+            geo_json_ad423007b1d256c7843d1b5f3639cc9a
                 .addData(data);
         }
-            geo_json_4a952f96325ad1631e64b96e90f03cc4_add({"features": [{"geometry": {"coordinates": [[[77.6426550373435, 22.57774800018515, 0.0], [77.64278977643698, 22.57767014070207, 0.0], [77.64281186275184, 22.57775078640838, 0.0], [77.6428453065455, 22.57780805876233, 0.0], [77.64290146529675, 22.57790031363915, 0.0], [77.64306474477053, 22.57810897041465, 0.0], [77.64315292239189, 22.57822103816661, 0.0], [77.6432689698413, 22.57831720120291, 0.0], [77.64339708723128, 22.57840221933245, 0.0], [77.64357151463628, 22.57847814353488, 0.0], [77.64371652156115, 22.5785482630975, 0.0], [77.64381861314178, 22.5786087856935, 0.0], [77.64392204582691, 22.57872131740622, 0.0], [77.64400787651539, 22.57887208189515, 0.0], [77.64408566057682, 22.57898322029369, 0.0], [77.64415170997381, 22.57913677069126, 0.0], [77.64422044157982, 22.57929527414797, 0.0], [77.64430224895477, 22.57947451904828, 0.0], [77.6443144865334, 22.57964385728048, 0.0], [77.64434549957514, 22.57978347603202, 0.0], [77.6443351060152, 22.57989678072418, 0.0], [77.64430518262088, 22.57999545789042, 0.0], [77.64425648376346, 22.58008918178444, 0.0], [77.64430928975344, 22.58021719102966, 0.0], [77.64434684067965, 22.58037662196683, 0.0], [77.64413796365261, 22.5803812655836, 0.0], [77.64392305165529, 22.5803818847325, 0.0], [77.64372859150171, 22.58037104962655, 0.0], [77.64354754239321, 22.58036733473288, 0.0], [77.64334637671709, 22.58035680920023, 0.0], [77.6433527469635, 22.58048357989996, 0.0], [77.64310967177153, 22.58046051661893, 0.0], [77.64285620301962, 22.58044596662759, 0.0], [77.64258798211813, 22.58042924961436, 0.0], [77.64236871153116, 22.58042491557356, 0.0], [77.64219269156456, 22.58039736345384, 0.0], [77.64211071655154, 22.58038854058289, 0.0], [77.64200460165739, 22.58038219430695, 0.0], [77.64203611761332, 22.58020047398868, 0.0], [77.64210250228643, 22.57998470014788, 0.0], [77.64218229800463, 22.57971567891756, 0.0], [77.64227382838726, 22.57942684426164, 0.0], [77.64239754527807, 22.57913026956902, 0.0], [77.64243610203266, 22.57888601289709, 0.0], [77.64248304069042, 22.57860367764934, 0.0], [77.64252092689276, 22.57831793645322, 0.0], [77.64259167015553, 22.57805819935889, 0.0], [77.6426550373435, 22.57774800018515, 0.0]]], "type": "Polygon"}, "properties": {"color": "red", "description": "\u003cdiv\u003e\u003cb\u003eStateName : \u0026nbsp;\u003c/b\u003eMadhya Pradesh\u003cbr\u003e\u003c/div\u003e\n              \u003cdiv\u003e\u003cb\u003eDistrict : \u0026nbsp;\u003c/b\u003eNarmdapuram\u003cbr\u003e\u003c/div\u003e\n              \u003cdiv\u003e\u003cb\u003eTehsil : \u0026nbsp;\u003c/b\u003eDolariya\u003cbr\u003e\u003c/div\u003e\n              \u003cdiv\u003e\u003cb\u003eVillage : \u0026nbsp;\u003c/b\u003eDolariya\u003cbr\u003e\u003c/div\u003e\n              \u003cdiv\u003e\u003cb\u003eFarmId : \u0026nbsp;\u003c/b\u003eF34\u003cbr\u003e\u003c/div\u003e\n              \u003cdiv\u003e\u003cb\u003ePlotId : \u0026nbsp;\u003c/b\u003eF34_A\u003cbr\u003e\u003c/div\u003e\n              \u003cdiv\u003e\u003cb\u003eKhasra Number : \u0026nbsp;\u003c/b\u003e1522,1719,1746,1743\u003cbr\u003e\u003c/div\u003e\n              \u003cdiv\u003e\u003cb\u003eRakba (in Acres) : \u0026nbsp;\u003c/b\u003e11.12\u003cbr\u003e\u003c/div\u003e\n              \u003cdiv\u003e\u003cb\u003eSurveyArea (in Acres): \u0026nbsp;\u003c/b\u003e11.19\u003cbr\u003e\u003c/div\u003e\n              \u003cdiv\u003e\u003cb\u003eCreated Date: \u0026nbsp;\u003c/b\u003e1/12/2023\u003cbr\u003e\u003c/div\u003e"}, "type": "Feature"}], "type": "FeatureCollection"});
+            geo_json_ad423007b1d256c7843d1b5f3639cc9a_add({"features": [{"geometry": {"coordinates": [[[77.6426550373435, 22.57774800018515, 0.0], [77.64278977643698, 22.57767014070207, 0.0], [77.64281186275184, 22.57775078640838, 0.0], [77.6428453065455, 22.57780805876233, 0.0], [77.64290146529675, 22.57790031363915, 0.0], [77.64306474477053, 22.57810897041465, 0.0], [77.64315292239189, 22.57822103816661, 0.0], [77.6432689698413, 22.57831720120291, 0.0], [77.64339708723128, 22.57840221933245, 0.0], [77.64357151463628, 22.57847814353488, 0.0], [77.64371652156115, 22.5785482630975, 0.0], [77.64381861314178, 22.5786087856935, 0.0], [77.64392204582691, 22.57872131740622, 0.0], [77.64400787651539, 22.57887208189515, 0.0], [77.64408566057682, 22.57898322029369, 0.0], [77.64415170997381, 22.57913677069126, 0.0], [77.64422044157982, 22.57929527414797, 0.0], [77.64430224895477, 22.57947451904828, 0.0], [77.6443144865334, 22.57964385728048, 0.0], [77.64434549957514, 22.57978347603202, 0.0], [77.6443351060152, 22.57989678072418, 0.0], [77.64430518262088, 22.57999545789042, 0.0], [77.64425648376346, 22.58008918178444, 0.0], [77.64430928975344, 22.58021719102966, 0.0], [77.64434684067965, 22.58037662196683, 0.0], [77.64413796365261, 22.5803812655836, 0.0], [77.64392305165529, 22.5803818847325, 0.0], [77.64372859150171, 22.58037104962655, 0.0], [77.64354754239321, 22.58036733473288, 0.0], [77.64334637671709, 22.58035680920023, 0.0], [77.6433527469635, 22.58048357989996, 0.0], [77.64310967177153, 22.58046051661893, 0.0], [77.64285620301962, 22.58044596662759, 0.0], [77.64258798211813, 22.58042924961436, 0.0], [77.64236871153116, 22.58042491557356, 0.0], [77.64219269156456, 22.58039736345384, 0.0], [77.64211071655154, 22.58038854058289, 0.0], [77.64200460165739, 22.58038219430695, 0.0], [77.64203611761332, 22.58020047398868, 0.0], [77.64210250228643, 22.57998470014788, 0.0], [77.64218229800463, 22.57971567891756, 0.0], [77.64227382838726, 22.57942684426164, 0.0], [77.64239754527807, 22.57913026956902, 0.0], [77.64243610203266, 22.57888601289709, 0.0], [77.64248304069042, 22.57860367764934, 0.0], [77.64252092689276, 22.57831793645322, 0.0], [77.64259167015553, 22.57805819935889, 0.0], [77.6426550373435, 22.57774800018515, 0.0]]], "type": "Polygon"}, "properties": {"color": "red", "description": "\u003cdiv\u003e\u003cb\u003eStateName : \u0026nbsp;\u003c/b\u003eMadhya Pradesh\u003cbr\u003e\u003c/div\u003e\n              \u003cdiv\u003e\u003cb\u003eDistrict : \u0026nbsp;\u003c/b\u003eNarmdapuram\u003cbr\u003e\u003c/div\u003e\n              \u003cdiv\u003e\u003cb\u003eTehsil : \u0026nbsp;\u003c/b\u003eDolariya\u003cbr\u003e\u003c/div\u003e\n              \u003cdiv\u003e\u003cb\u003eVillage : \u0026nbsp;\u003c/b\u003eDolariya\u003cbr\u003e\u003c/div\u003e\n              \u003cdiv\u003e\u003cb\u003eFarmId : \u0026nbsp;\u003c/b\u003eF34\u003cbr\u003e\u003c/div\u003e\n              \u003cdiv\u003e\u003cb\u003ePlotId : \u0026nbsp;\u003c/b\u003eF34_A\u003cbr\u003e\u003c/div\u003e\n              \u003cdiv\u003e\u003cb\u003eKhasra Number : \u0026nbsp;\u003c/b\u003e1522,1719,1746,1743\u003cbr\u003e\u003c/div\u003e\n              \u003cdiv\u003e\u003cb\u003eRakba (in Acres) : \u0026nbsp;\u003c/b\u003e11.12\u003cbr\u003e\u003c/div\u003e\n              \u003cdiv\u003e\u003cb\u003eSurveyArea (in Acres): \u0026nbsp;\u003c/b\u003e11.19\u003cbr\u003e\u003c/div\u003e\n              \u003cdiv\u003e\u003cb\u003eCreated Date: \u0026nbsp;\u003c/b\u003e1/12/2023\u003cbr\u003e\u003c/div\u003e"}, "type": "Feature"}], "type": "FeatureCollection"});
 
         
     
-    geo_json_4a952f96325ad1631e64b96e90f03cc4.bindTooltip(
+    geo_json_ad423007b1d256c7843d1b5f3639cc9a.bindTooltip(
     function(layer){
     let div = L.DomUtil.create('div');
     
@@ -134,52 +134,52 @@
     ,{"className": "foliumtooltip", "sticky": true});
                      
     
-            geo_json_4a952f96325ad1631e64b96e90f03cc4.addTo(map_ddd49222032698a4fe72d093cd3143a0);
+            geo_json_ad423007b1d256c7843d1b5f3639cc9a.addTo(map_3e3a1bf73df2cb0b3d63845b7bf519b2);
         
     
-            var tile_layer_430879cd3fdf1dbdb226275ac9e15176 = L.tileLayer(
+            var tile_layer_a004e5e6d2d0366403e26070c1719e15 = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "OpenStreetMap", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_430879cd3fdf1dbdb226275ac9e15176.addTo(map_ddd49222032698a4fe72d093cd3143a0);
+            tile_layer_a004e5e6d2d0366403e26070c1719e15.addTo(map_3e3a1bf73df2cb0b3d63845b7bf519b2);
         
     
-            var tile_layer_ec0c229e8a1f9529b2b0e86b2c06421e = L.tileLayer(
+            var tile_layer_c4c8209b733a9f89d52348f6827bc594 = L.tileLayer(
                 "http://mt1.google.com/vt/lyrs=s\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google Normal", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_ec0c229e8a1f9529b2b0e86b2c06421e.addTo(map_ddd49222032698a4fe72d093cd3143a0);
+            tile_layer_c4c8209b733a9f89d52348f6827bc594.addTo(map_3e3a1bf73df2cb0b3d63845b7bf519b2);
         
     
-            var tile_layer_bc3b9c8a5ef893519eee783dae2f44ec = L.tileLayer(
+            var tile_layer_1e85eb8509fb96397f394a1882ca79bf = L.tileLayer(
                 "http://mt1.google.com/vt/lyrs=y\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google Hybrid", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_bc3b9c8a5ef893519eee783dae2f44ec.addTo(map_ddd49222032698a4fe72d093cd3143a0);
+            tile_layer_1e85eb8509fb96397f394a1882ca79bf.addTo(map_3e3a1bf73df2cb0b3d63845b7bf519b2);
         
     
-            var layer_control_89df382b11fb19d2b2559cd4a0b0181c_layers = {
+            var layer_control_a5f8bb1b420537cbc76ff73ab675658a_layers = {
                 base_layers : {
-                    "http://mt1.google.com/vt/lyrs=s\u0026x={x}\u0026y={y}\u0026z={z}" : tile_layer_d0e26f0ccac42488c355b783db7f0d4a,
-                    "OSM" : tile_layer_430879cd3fdf1dbdb226275ac9e15176,
-                    "Normal" : tile_layer_ec0c229e8a1f9529b2b0e86b2c06421e,
-                    "Hybrid" : tile_layer_bc3b9c8a5ef893519eee783dae2f44ec,
+                    "http://mt1.google.com/vt/lyrs=s\u0026x={x}\u0026y={y}\u0026z={z}" : tile_layer_a3d3660813093b83c3ad4af423694a90,
+                    "OSM" : tile_layer_a004e5e6d2d0366403e26070c1719e15,
+                    "Normal" : tile_layer_c4c8209b733a9f89d52348f6827bc594,
+                    "Hybrid" : tile_layer_1e85eb8509fb96397f394a1882ca79bf,
                 },
                 overlays :  {
-                    "macro_element_4a952f96325ad1631e64b96e90f03cc4" : geo_json_4a952f96325ad1631e64b96e90f03cc4,
+                    "macro_element_ad423007b1d256c7843d1b5f3639cc9a" : geo_json_ad423007b1d256c7843d1b5f3639cc9a,
                 },
             };
-            let layer_control_89df382b11fb19d2b2559cd4a0b0181c = L.control.layers(
-                layer_control_89df382b11fb19d2b2559cd4a0b0181c_layers.base_layers,
-                layer_control_89df382b11fb19d2b2559cd4a0b0181c_layers.overlays,
+            let layer_control_a5f8bb1b420537cbc76ff73ab675658a = L.control.layers(
+                layer_control_a5f8bb1b420537cbc76ff73ab675658a_layers.base_layers,
+                layer_control_a5f8bb1b420537cbc76ff73ab675658a_layers.overlays,
                 {"autoZIndex": true, "collapsed": true, "position": "topright"}
-            ).addTo(map_ddd49222032698a4fe72d093cd3143a0);
+            ).addTo(map_3e3a1bf73df2cb0b3d63845b7bf519b2);
 
         
 </script>
