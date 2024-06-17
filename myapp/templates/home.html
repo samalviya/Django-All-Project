@@ -14,10 +14,11 @@
             color: #000000;
         }
         .container {
-            background-color: rgba(255, 255, 255, 0.5);
+            background-color: rgba(255, 255, 255, 0.3);
             padding: 20px;
             border-radius: 10px;
-            margin-top: 50px;
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
         .welcome-text {
             text-align: center;
@@ -34,16 +35,19 @@
         }
         .logo-container {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 50px;}
+        .logo-container img {
+            max-height: 100px; /* Adjust the maximum height of the logo */
         }
     </style>
 </head>
 <body>
-    <div class="logo-container">
-        <img src="{% static 'your_app_name/logo.png' %}" alt="Logo" height="100">
-    </div>
+
     <div class="container">
         <div class="welcome-text">
+            <div class="logo-container">
+                <img src="{% static 'your_app_name/logo.png' %}" alt="Logo" height="auto">
+            </div>
             <h1>Welcome to KML Modifier</h1>
         </div>
         <div class="btn-container">
