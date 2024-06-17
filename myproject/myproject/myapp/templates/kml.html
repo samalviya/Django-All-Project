@@ -75,6 +75,7 @@
 
     <div class="container mt-5">
         <h2>Upload CSV File</h2>
+        <label for="coordinatesStr">Rows = "Plot Id","Final Polygon of farm"</label>
         <form method="post" enctype="multipart/form-data" action="{% url 'process_csv' %}">
             {% csrf_token %}
             <div class="form-group">
