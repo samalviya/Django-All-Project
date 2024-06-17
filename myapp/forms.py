@@ -10,7 +10,7 @@ class GeoTIFFForm(forms.Form):
             'class': 'form-control',
             'placeholder': 'Enter bounding box diagonals coordinates',
             'data-toggle': 'tooltip',
-            'title': 'Format: west,south,east,north'
+            'title': 'Format: west,south,east,north','style': 'color: black;'  
         })
     )
     zoom = forms.IntegerField(
