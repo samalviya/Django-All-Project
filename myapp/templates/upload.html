@@ -16,7 +16,6 @@
             margin: 20px auto;
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.3);
-            padding: 20px;
             border-radius: 10px;
         }
         h2 {
@@ -36,7 +35,23 @@
             font-size: 16px;
         }
         .upload-btn:hover {
-            background-color: #007bff;
+            background-color: #0056b3;
+        }
+        .btn-secondary {
+            background-color: #6c757d;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+        .btn-secondary:hover {
+            background-color: #5a6268;
+        }
+        .error-message {
+            color: red;
+            margin-top: 5px;
         }
     </style>
 </head>
@@ -44,13 +59,40 @@
     <div class="container">
         <h2>Upload a KML File</h2>
         <div class="form-container">
-            <form method="post" enctype="multipart/form-data">
-                {% csrf_token %}<br>
+            <form id="uploadForm" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
                 {{ form }}
-                <br><br>
-                <button type="submit" class="upload-btn">Upload KML</button>
+                <div id="errorMessage" class="error-message"></div>
+                <br>
+                <button type="submit" class="upload-btn" id="uploadButton">Upload KML</button>
+                <a href="{% url 'home' %}" class="btn-secondary">Back to Home</a>
             </form>
         </div>
     </div>
+
+    <script>
+        // JavaScript for form validation
+        document.getElementById('uploadForm').addEventListener('submit', function(event) {
+            const fileInput = document.getElementById('id_kml_file');
+            const errorMessage = document.getElementById('errorMessage');
+
+            if (!fileInput.files || fileInput.files.length === 0) {
+                errorMessage.textContent = 'Please select a file.';
+                event.preventDefault();
+            } else {
+                const file = fileInput.files[0];
+                const fileSize = file.size;
+
+                // File size limit (adjust as necessary)
+                const maxSize = 10 * 1024 * 1024; // 10 MB
+                if (fileSize > maxSize) {
+                    errorMessage.textContent = 'File size exceeds the limit of 10MB.';
+                    event.preventDefault();
+                } else {
+                    errorMessage.textContent = '';
+                }
+            }
+        });
+    </script>
 </body>
 </html>
