@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+75.86467031389475,22.752396000312032,0
+75.86493015289307,22.75233787322868,0
+</coordinates>
+</LinearRing>
+</Placemark>
+<Placemark>
+<name>Rectangle Merged Segment</name>
+<LinearRing>
+<coordinates>
+75.86491707712412,22.75213133637077,0
+75.86464885622263,22.75220214020903,0
+</coordinates>
+</LinearRing>
+</Placemark>
+</Document>
+</kml>

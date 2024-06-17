@@ -1,5 +1,5 @@
 <!-- map_display.html -->
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,14 +8,17 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background: url("{% static 'your_app_name/61755.jpg' %}") no-repeat center center fixed;
+            background-size: cover;
         }
         .container {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
             border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #f9f9f9;
+            background-color: rgba(255, 255, 255, 0.3);
+            padding: 20px;
+            border-radius: 10px;
         }
         h2 {
             text-align: center;
@@ -25,7 +28,7 @@
             margin-top: 20px;
         }
         .download-btn {
-            background-color: #4CAF50;
+            background-color: #007bff;
             color: white;
             padding: 10px 20px;
             border: none;

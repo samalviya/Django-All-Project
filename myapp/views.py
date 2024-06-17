@@ -279,10 +279,11 @@ def convert_kml_to_html(kml_file, output_folder):
 
     folium.LayerControl().add_to(m)
     # Save the map
-    map_file = os.path.join(output_folder, "plot_map.html")
-    m.save(map_file)
+    map_file_name = "plot_map.html"
+    map_file_path = os.path.join(output_folder, map_file_name)
+    m.save(map_file_path)
 
-    return map_file
+    return map_file_name, map_file_path
 
 def upload_kml(request):
     if request.method == 'POST':
@@ -293,11 +294,12 @@ def upload_kml(request):
             if not os.path.exists(output_folder):
                 os.makedirs(output_folder)
 
-            map_file = convert_kml_to_html(kml_file, output_folder)
+            map_file_name, map_file_path = convert_kml_to_html(kml_file, output_folder)
 
             # Provide the map file for download
-            download_url = f'/download/{os.path.basename(map_file)}'
-            return redirect(f'/map_display/?map_url={settings.MEDIA_URL}kml_maps/{os.path.basename(map_file)}&download_url={download_url}')
+            download_url = f'/download/{map_file_name}'
+            map_url = f'{settings.MEDIA_URL}kml_maps/{map_file_name}'
+            return redirect(f'/map_display/?map_url={map_url}&download_url={download_url}')
     else:
         form = KMLUploadForm()
 
